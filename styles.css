@@ -1,0 +1,290 @@
+
+/* Studio Arruda Portfolio Style Sheet Codecadamey */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: "Inter", sans-serif;
+}
+
+h1 {
+	
+	font-weight: 400;
+	font-size: 60px;
+	max-width: 800px;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 5px #373636;
+}
+
+h2 {
+	
+	font-size: 60px;
+	font-weight: 300;
+	line-height: 70px;
+	padding: 0 0 50px 0;
+	color: #000000;
+}
+
+p {
+	
+	font-size: 20px;
+	font-weight: 300;
+
+}
+
+
+/* Navigation */
+
+nav img {
+	max-height: 50px;
+	padding-left: 20px;
+}
+
+#logo {
+	padding-left: 100px;
+	padding-right: 20px;
+}
+
+
+nav {
+	width: 100%;
+	max-height: 100px;
+	display: inline-flex;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	z-index: 3;
+	
+}
+
+nav .links {
+	display: flex;
+	padding: 15px 100px 15px 0px;
+
+}
+
+.links a {
+	display: flex;
+	padding: 20px 100px 20px 0px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #48b5d0;
+}
+
+.links a:hover {
+	text-shadow: 4px 4px 4px #d7dde9;
+	color: #30d0f8;
+	font-weight: 500;
+}
+
+/* Keyframes */
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px) scale(0.9);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+
+/* Hero Section */
+
+#hero {
+	display: flex;
+	background-image: url(../studioarrudaassets/Surfhero.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 800px;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero h1 {
+	animation: fade-in 1s;
+}
+
+.gradient {
+	background-size: cover;
+	min-height: 950px;
+	width: 100%;
+	background-image: linear-gradient(to top, white 18%, transparent 33%);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Project Section */
+
+.projectscontainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 150px auto;
+	max-width: 1200px;
+	justify-content: center;
+
+}
+
+.projectscontainer h2 {
+	padding-bottom: 100px;
+	
+}
+
+.workscontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.90);
+	font-family: "Inter", sans-serif;
+	font-weight: 200;
+    color: white;
+    width: 350px;
+    margin: 0 auto;
+	border-radius: 10px 10px 0 0;
+    padding: 10px 30px;
+}
+
+.work {
+	display: grid;
+	align-items: flex-start;
+	width: auto;
+	min-height: 300px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #373636;
+	
+}
+
+#docks {
+	background-image: url(../studioarrudaassets/dockimg.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#farmers {
+	background-image: url(../studioarrudaassets/farmmarket.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#bookpage {
+	background-image: url(../studioarrudaassets/book_image@2x.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#plaquepage {
+	background-image: url(../studioarrudaassets/goldleafhomeimg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#autoresto {
+	background-image: url(../studioarrudaassets/revivalhome.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.aboutcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #373636;
+
+}
+
+.aboutdiv {
+	text-align: left;
+	align-content: center;
+	line-height: 40px;
+	color: #fff;
+	height: 500px;
+	width: 450px;
+	padding-left: 50px;
+}
+
+.aboutdiv p {
+	max-width: 400px;
+}
+
+.aboutdiv h2 {
+	color: #51c2de;
+}
+
+.aboutcontainer img {
+	float: left;
+	height: 500px;
+	width: 400px;
+	border-radius: 10px;
+	margin: 100px 100px 100px 0;
+}
+/* Contact Section */
+
+.contactcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #f8f5f5;
+}
+
+.contactdiv {
+	text-align: left;
+	align-content: center;
+	line-height: 40px;
+	color: #010101;
+	height: 500px;
+	width: 450px;
+	
+}
+
+.google-map iframe {
+	 float: right;
+     height: 500px;
+     width: 400px;
+	 border-radius: 10px;
+	 margin: 100px 0 100px 100px;
+}
+
+.contactdiv h2 {
+	color:#010101;
+}
+
+/* Footer Section */
+
+.footercontainer {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+	justify-content: center;
+	background-color: #373636;
+}
+
+.footercontainer p {
+	font-family: "Inter", sans-serif;
+	font-size: 12px;
+	color: #fff;
+	align-items: center;
+	padding: 25px 0;
+}
+
