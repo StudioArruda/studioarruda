@@ -173,13 +173,13 @@ nav .links {
 }
 
 #docks {
-	background-image: url(.../studioarrudaassets/dockimg.png);
+	background-image: url(./studioarrudaassets/dockimg.png);
 	background-size: cover;
 	background-position: center;
 }
 
 #farmers {
-	background-image: url(../studioarrudaassets/farmmarket.png);
+	background-image: url(./studioarrudaassets/farmmarket.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -191,14 +191,14 @@ nav .links {
 }
 
 #plaquepage {
-	background-image: url(/studioarrudaassets/goldleafhomeimg.png);
+	background-image: url(./studioarrudaassets/goldleafhomeimg.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 #autoresto {
-	background-image: url(studioarrudaassets/revivalhome.png);
+	background-image: url(./studioarrudaassets/revivalhome.png);
 	background-size: cover;
 	background-position: center;
 }
