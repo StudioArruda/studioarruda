@@ -19,23 +19,34 @@
 
 <body>
 
-	<nav>
+
+	<nav id="navigation" class="navbar">
 			<div>
 			<a>
-				<img id="logo" src="./studioarrudaassets/Studioarrudalogo.png" alt="Studio Arruda's logo">
+				<img id="logo" src="/Users/jay/Desktop/Studio Arruda Site/studioarrudaassets/Studioarrudalogo.png" alt="Studio Arruda's logo">
 			</a>
-			<a href="#hero">
-				<img src="./studioarrudaassets/Studio Arrudatextlogo.jpg" alt="Studio Arruda text">
+			<a id="logotext" href="#hero">
+				<img src="/Users/jay/Desktop/Studio Arruda Site/studioarrudaassets/Studio Arrudatextlogo.jpg" alt="Studio Arruda text">
 			</a>
 			</div>
-			<div class="links">
+			<div class="nav-toggle links">
 				<a href="#portfolio">Portfolio</a>
 				<a href="#about">About Me</a>
 				<a href="#contact">Contact</a>
 			</div>
+
+			<button id="hamburger-toggle" class="hamburger">
+				<svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+					<path d="M4 6l16 0"></path>
+					<path d="M4 12l16 0"></path>
+					<path d="M4 18l16 0"></path>
+				  </svg>
+			</button>
+
+			<script src="app.js"></script>
+
 	</nav>
-
-
+	
 	<main>
 
 		<!-- Hero Banner Section -->
