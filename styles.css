@@ -85,6 +85,11 @@ nav .links {
 	font-weight: 500;
 }
 
+nav .hamburger {
+	position: absolute;
+	display: none;
+}
+
 /* Keyframes */
 
 @keyframes fade-in {
@@ -288,3 +293,94 @@ nav .links {
 	padding: 25px 0;
 }
 
+/* Media Queries */
+
+@media only screen and (max-width: 1100px) {
+	#logo {
+	  display: none;
+	}
+
+	#logotext {
+		display: flex;
+		height: 100px;
+		margin-top: 20px;
+	}
+
+	#logotext img {
+		max-width:100%;
+		height:100%;
+		margin:0;
+		
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	nav .hamburger {
+		display: flex;
+		position: absolute;
+		margin-top: 60px;
+		cursor: pointer;
+		z-index: 3;
+		
+	}
+
+	.navbar.open .links {
+		display: flex;
+		justify-content: center;
+	}
+
+
+	
+	nav {
+		display: flex;
+		justify-content: center;
+	}
+
+	
+	.navbar .links {
+		display: none;
+	}
+
+	nav .links  {
+		display: flex;
+		padding: 5px 50px;
+		justify-items: center;
+	}
+
+	.links a {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		padding: 20px 50px 20px 50px;
+	}
+
+	.navbar.open #logotext {
+		display: flex;
+		height: 80px;
+		margin-top: 20px;
+	}
+
+	.navbar.open {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.navbar.open .nav-toggle {
+		display: flex;
+		justify-content: center;
+	}
+
+	.navbar.open .hamburger {
+		display: flex;
+		position: absolute;
+		margin-top: 0px;
+		cursor: pointer;
+		z-index: 3;
+		
+	}
+
+
+  }
