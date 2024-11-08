@@ -368,7 +368,7 @@ nav .hamburger {
 	.navbar.open .hamburger {
 		display: flex;
 		position: relative;
-		margin: 0px 20px 5px 0px;
+		margin: 0px 20px 5px 20px;
 		cursor: pointer;
 		z-index: 3;
 		
